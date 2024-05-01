@@ -1,0 +1,65 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/app_background_colour"
+    tools:context=".MainMenu">
+
+    <TextView
+        android:id="@+id/MainMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp"
+        android:text="Main Menu"
+        android:textColor="@color/white"
+        android:textSize="50dp" />
+
+    <Button
+        android:id="@+id/categoryCreationButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="#02B6D5"
+        android:text="Category Entry" />
+
+    <Button
+        android:id="@+id/timesheetEntryButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Timesheet Entry"
+        android:layout_marginBottom="10dp"
+        android:layout_gravity="center_horizontal"
+        android:backgroundTint="#02B6D5" />
+
+    <Button
+        android:id="@+id/dailyGoalsBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Daily Goals Setting"
+        android:layout_marginBottom="10dp"
+        android:layout_gravity="center_horizontal"
+        android:backgroundTint="#02B6D5" />
+
+    <Button
+        android:id="@+id/rewardsBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="#02B6D5"
+        android:text="Rewards"/>
+
+    <Button
+        android:id="@+id/settingsBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Settings"
+        android:layout_marginBottom="80dp"
+        android:layout_gravity="center_horizontal"
+        android:backgroundTint="#02B6D5" />
+</LinearLayout>

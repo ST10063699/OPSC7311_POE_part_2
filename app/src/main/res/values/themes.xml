@@ -1,0 +1,16 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.OPSCPOE" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="android:buttonStyle">@style/BorderButton</item>
+    </style>
+
+    <style name="Theme.OPSCPOE" parent="Base.Theme.OPSCPOE" />
+
+    <style name="BorderButton" parent="Widget.AppCompat.Button.Borderless">
+        <item name="android:background">@null</item> <!-- Remove the default background -->
+        <item name="android:padding">8dp</item> <!-- Add padding to make space for the border -->
+        <item name="android:foregroundGravity">center</item> <!-- Center the border -->
+          </style>
+</resources>

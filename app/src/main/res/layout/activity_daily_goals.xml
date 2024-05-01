@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/app_background_colour"
+    tools:context=".DailyGoals">
+
+    <TextView
+        android:id="@+id/CreateNewAccountText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Daily Goals"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="50dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:id="@+id/dailyGoalsText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Please insert the required data in the Textboxes below:"
+        android:textColor="@color/white"
+        android:layout_marginTop="20dp" />
+
+    <EditText
+        android:id="@+id/MinimumHoursText"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="24dp"
+        android:background="#09A7C6"
+        android:hint="Minimum Hours"
+        android:inputType="text"
+        android:textColor="@android:color/white"
+        android:textColorHint="@color/white" />
+
+    <EditText
+        android:id="@+id/MaximumHoursText"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="24dp"
+        android:hint="Maximum Hours"
+        android:textColorHint="@color/white"
+        android:inputType="text"
+        android:background="#09A7C6"
+        android:textColor="@android:color/white" />
+
+
+
+    <Button
+        android:id="@+id/SetGoalBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Set Goal"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_horizontal"
+        android:backgroundTint="#0CC0DF" />
+
+    <TextView
+        android:id="@+id/progressBarText"
+        android:layout_width="385dp"
+        android:layout_height="wrap_content"
+        android:text="The Progress Bar below Shows your progress towards your Daily Goal "
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_horizontal"/>
+
+    <ProgressBar
+        android:id="@+id/startTimeProgressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:progressDrawable="@drawable/progress_bar_goal" />
+
+
+    <Button
+        android:id="@+id/MonthlyGoalBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Monthly Goal"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_horizontal"
+        android:backgroundTint="#0CC0DF" />
+
+    <Button
+        android:id="@+id/TotalHoursGraphBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#0CC0DF"
+        android:text="Total Hours Graph" />
+</LinearLayout>

@@ -1,0 +1,168 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/app_background_colour"
+    android:gravity="center"
+    >
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <TextView android:id="@+id/timesheetEntryText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Timesheet Entry"
+        android:textSize="50sp"
+        android:textColor="@android:color/white"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter the following data. Click 'Create Entry' to Start Shift"
+        android:textColor="@android:color/white"
+        android:layout_below="@id/timesheetEntryText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:gravity="center" />
+
+    <EditText
+        android:id="@+id/StartDateTextbox"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/textView3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:background="#09A7C6"
+        android:hint="Date"
+        android:inputType="date"
+        android:textColorHint="@android:color/white" />
+
+    <EditText
+        android:id="@+id/StartTimeEntry"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/StartDateTextbox"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:background="#09A7C6"
+        android:hint="Start Time"
+        android:inputType="text"
+        android:textColorHint="@android:color/white" />
+
+    <EditText
+        android:id="@+id/endTimeEntry"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/StartTimeEntry"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+       android:background="#09A7C6"
+        android:hint="End Time"
+        android:inputType="text"
+        android:textColorHint="@android:color/white" />
+
+    <EditText
+        android:id="@+id/InputDescription"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/endTimeEntry"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:background="#09A7C6"
+        android:hint="Description"
+        android:inputType="text"
+        android:textColorHint="@android:color/white" />
+
+    <RelativeLayout
+        android:id="@+id/spinnerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/InputDescription"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true">
+
+        <Spinner
+            android:id="@+id/categoryDropdownBox"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:background="#09A7C6"
+            android:spinnerMode="dropdown"
+            android:layout_centerHorizontal="true" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="00:00"/>
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/timesheetImageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@android:drawable/ic_input_add"
+        android:layout_below="@id/spinnerLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp" />
+
+
+    <Button
+        android:id="@+id/createEntryBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/timesheetImageView1"
+        android:layout_marginStart="269dp"
+        android:layout_marginTop="45dp"
+        android:backgroundTint="#02B6D5"
+        android:text="Create Entry" />
+
+    <Button
+        android:id="@+id/TimesheetEntryHistory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/createEntryBtn"
+        android:layout_marginTop="18dp"
+        android:backgroundTint="#02B6D5"
+        android:text="Timesheet Entry History" />
+
+    <ProgressBar
+        android:id="@+id/startTimeProgressBarTimesheetEntry"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/TimesheetEntryHistory"
+        android:layout_marginTop="16dp"
+        android:progressDrawable="@drawable/progress_bar_goal" />
+
+    <TextView
+        android:id="@+id/timerCount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="00:00:00"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:layout_below="@id/startTimeProgressBarTimesheetEntry"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/AddImageBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/timesheetImageView1"
+        android:layout_marginStart="20dp"
+        style="@style/Theme.OPSCPOE"
+        android:layout_marginTop="45dp"
+        android:backgroundTint="#02B6D5"
+        android:gravity="center_vertical"
+        android:text="Add Image (Optional)" />
+
+
+</RelativeLayout>
+
